@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <style>
+  
+  .mycls{
+    background-color: blue;
+  }
+
+  div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+  }
+
+  button{
+    width: 100px;
+    padding: 8px;
+    font-size: 105%;
+          }
+
+  </style>
+  </head>
+
+  <body>
+    <div id="hi"></div>
+    <button onclick="clrChange()">Change</button>
+
+    <script>
+      function clrChange(){
+      let target = document.getElementById("hi");
+      target.classList.add("mycls");
+      }
+    </script>
+  </body>
+</html>
