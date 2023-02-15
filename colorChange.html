@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+
+    <style>
+        .clr{
+            background-color: blueviolet;
+        }
+
+        .card-holder .card{
+            width: 95%;
+            max-width: 455px;
+        }
+        .card-holder .card .color-box{
+            height: 200px;
+            background-color: aqua;
+        }
+        .card-holder .card .btn{
+            width: 100%;
+            padding: 8px;
+            font-size: 105%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-holder">
+        <div class="card">
+            <div id="box" class="color-box"></div>
+            <button class="btn" onclick="changeClr()">Change Color</button>
+        </div>
+    </div>
+
+    <script>
+        function changeClr() {
+            let target = document.getElementById("box");
+            target.classList.add("clr");
+        }
+
+    </script>
+</body>
+</html>
