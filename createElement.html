@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <div id="old-div">
+
+    </div>
+
+    <div id="div3"></div>
+
+    <script>
+        document.body.onload = addElement;
+        document.body.onload = add2ndElement;
+
+        function addElement(){
+            const newDiv = document.createElement("div");
+
+            const newText = document.createTextNode("Hey There!");
+
+            newDiv.appendChild(newText);
+
+            const currentDiv = document.getElementById("old-div");
+
+            document.body.insertBefore(newDiv, currentDiv);
+
+            console.log(newDiv);
+        }
+
+        function add2ndElement() {
+            const newParagraph = document.createElement("p");
+
+            const newText = document.createTextNode("qwe fdiulearfh farhf fhreh ruywb bhg durht ddgtj, bcgf opa. poyhgt khoiy bhytf areshf.")
+
+            newParagraph.appendChild(newText);
+
+            const currentPlace = document.getElementById("div3");
+
+            document.body.insertBefore(newParagraph, currentPlace);
+
+            console.log(newParagraph);
+        }
+    </script>
+</body>
+</html>
