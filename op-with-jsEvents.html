@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation with JS Events</title>
+</head>
+<body>
+    <div id="output"></div>
+    <input id="num1" type="number">
+    <input id="num2" type="number"><br>
+
+    <button onclick="doSum()" id="sum">Sum</button>
+    <button id="div">Divide</button>
+    <button id="multi">Multiply</button>
+    <button id="sub">Subtract</button>
+
+    <script>
+        let output = document.getElementById("output");
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+
+        function doSum() {
+            let a = Number(num1.value);
+            let b = Number(num2.value);
+            let result = a + b;
+            output.innerHTML = `The Sum of ${a} and ${b} is ${result}`;
+        }
+    </script>
+</body>
+</html>
