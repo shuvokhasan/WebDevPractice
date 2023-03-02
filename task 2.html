@@ -22,7 +22,9 @@
         function concateName() {
             let margedName = fName.value + " " + lName.value;
             fullName.innerHTML = "Your name is: " + margedName;
-            console.log('007');
+
+            fName.value = "";
+            lName.value = "";
         }
     </script>
 </body>
