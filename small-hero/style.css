@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@800&family=Inter:wght@400;600&display=swap');
+
+/*
+font-family: 'Epilogue', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Navigation bar Style */
+
+.hero-sec{
+    height: 90vh;
+    background-color: rgb(139,146,230);
+}
+
+.hero-sec nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.hero-sec nav h1{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 2.2rem;
+}
+
+.hero-sec nav ul{
+    list-style-type: none;
+}
+
+.hero-sec nav ul li{
+    display: inline;
+    margin-left: 34px;
+}
+
+.hero-sec nav ul li a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.hero-sec nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Hero Section style */
+
+.hero-content-wrap{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.hero-content-wrap .hero-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content-wrap .hero-left h1{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    width: 80%;
+    min-width: 380px;
+}
+
+.hero-content-wrap .hero-left p{
+    font-size: 1.1rem;
+    margin: 24px 0;
+    width: 50%;
+    min-width: 480px;
+}
+
+.hero-content-wrap .hero-left .talk-btn{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 14px 20px;
+    margin-top: 4px;
+    border-radius: 14px;
+    background-color: #4A3194;
+    transition: 0.4s;
+}
+
+.hero-content-wrap .hero-left .talk-btn:hover{
+    background-color: #2B196A;
+}
+
+.hero-content-wrap .hero-right{
+    width: 50%;
+    height: 80vh;
+}
+
+.hero-content-wrap .hero-right .hero-img-wrap{
+}
+
+.hero-content-wrap .hero-right img{
+    display: inline-block;
+
+    height: 576px;
+    margin-bottom: 80px;
+}
