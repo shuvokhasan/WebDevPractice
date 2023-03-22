@@ -1,0 +1,15 @@
+.parent-wrap{
+    width: 400px;
+}
+
+.child-div{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(187, 46, 46);
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    bottom: 235px;
+}

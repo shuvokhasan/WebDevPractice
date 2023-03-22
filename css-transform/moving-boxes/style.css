@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-box{
+    width: 40%;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    height: 16px;
+    width: 16px;
+    background-color: red;
+    transition: transform .4s;
+}
+
+.box:hover{
+    transform: rotate(12deg);
+}
+
+.greetings{
+    text-align: center;
+    font-size: .888rem;
+    position: relative;
+    bottom: 200px;
+}
+
+.greetings:hover box{
+    transform: rotate(12deg);
+}
+
