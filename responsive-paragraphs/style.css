@@ -69,7 +69,10 @@
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        width: 30%;
+        width: 50%;
+
+        min-width: 500px;
+        max-width: 500px;
     }
     
     .nav-sec ul{
@@ -77,6 +80,9 @@
         max-width: 500px;
         margin: 0 auto;
         list-style-type: none;
+
+        position: fixed;
+        left: 0;
     }
 
     .paragraph-sec{
