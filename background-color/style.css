@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active{
+    border-bottom: 1px solid black;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero .nav-sec{
+
+}
+
+.hero .nav-sec nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero .nav-sec h1{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.hero .nav-sec nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.hero .nav-sec nav ul li{
+    margin-left: 1.5rem;
+}
+
+.hero .nav-sec nav ul li a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: border-bottom .6s;
+}
+
+.hero .nav-sec nav ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* hero section style */
+
+.hero-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-sec h2{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.hero-sec h1{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.hero-sec div input{
+    padding: 1rem;
+    font-size: 1rem;
+}
