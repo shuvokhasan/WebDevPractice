@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-wrap{
+    width: 100%;
+}
+
+.nav-wrap nav{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.nav-wrap .nav-btn button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: background .3s;
+}
+
+.nav-wrap .nav-btn button:hover{
+    background-color: #333;
+}
+
+.nav-wrap .nav-bar{
+    /* display: none; */  /* animation doesn't work with display property */
+    background-color: #333;
+    width: 70%;
+    position: fixed;
+    top: 3rem;
+    transition: transform .8s;
+    transform: translateX(400%);
+}
+
+.nav-wrap .nav-bar.on{
+    /* display: block; */
+    /* width: 70%; */
+    transition: transform .8s;
+    transform: translateX(0);
+}
+
+.nav-wrap .nav-bar a{
+    display: block;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    margin-top: 2px;
+}
