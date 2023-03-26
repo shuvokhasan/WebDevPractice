@@ -1,9 +1,8 @@
 const box = document.getElementById('box');
-        const btn = document.getElementById('btn');
+const btn = document.getElementById('btn');
 
-        btn.addEventListener('click', showBox);
-        function showBox(){
-            const boxDisplay = box.classList.toggle('box-op');
-            // if()
-            console.log(box);
-        }
+btn.addEventListener('click', showBox);
+
+function showBox(){
+    const boxDisplay = box.classList.toggle('box-op');
+}
