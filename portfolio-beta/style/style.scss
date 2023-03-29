@@ -1,0 +1,208 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;800&family=Noto+Serif:wght@400;700&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif;
+   font-family: 'Noto Serif', serif;        */
+
+
+// Universal CSS
+
+:root{
+    --primary-color: #039BE5;
+    --hover-color: #29B6F6;
+
+    --title: 'Noto Serif', serif;
+    --body: 'Noto Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+// .container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     // align-items: center;
+// }
+
+p{
+    margin: 2rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 400;
+}
+
+a{
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+
+.navigation{
+    width: 100%;
+    // overflow-x: hidden;
+
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // overflow: hidden;
+
+        nav{
+            width: 90%;
+            height: 3rem;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: relative;
+            // overflow: hidden;
+
+            .logo{
+                font-size: 3rem;
+            }
+
+            .responsive-links{
+                // display: block;
+
+                .visibility-1{
+                    display: none;
+                }
+
+                .visibility-2{
+                    display: none;
+                }
+
+                .visibility-3{
+                    display: none;
+                }
+
+                .visibility-4{
+                    display: none;
+                }
+
+                .visibility-5{
+                    display: none;
+                }
+            }
+
+            .menu-icon{
+                font-weight: bold;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            ul{
+                display: block;
+                list-style-type: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                width: 100%;
+                // z-index: 1;
+
+                transform: translateX(500%);
+
+                li{
+                    display: block;
+
+                    a{
+                        display: inline-block;
+                        padding: 1rem 1.2rem;
+                        text-align: right;
+
+                        &:hover{
+                            color: var(--hover-color);
+                        }
+                    }
+                }
+            }
+
+            ul.toggle-menu{
+                display: block;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .container{
+        width: 80%;
+        max-width: 392px;
+        margin: 0 auto;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        a{
+            transition: margin .4s;
+
+            &:hover{
+                margin-left: 5px;
+                color: var(--hover-color)
+            }
+        }
+    }
+}
+
+section.main{
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+
+    p{
+        padding: 0  1rem;
+    }
+}
+
+
+// Responsive Layout
+
+@media only screen and (min-width: 660px){
+    .container{
+
+        nav{
+
+            .menu-icon{
+                display: none;
+            }
+    
+            ul{
+                display: block;
+                list-style-type: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                width: 100%;
+                transform: translateX(0);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,171 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;800&family=Noto+Serif:wght@400;700&display=swap");
+/* font-family: 'Noto Sans', sans-serif;
+   font-family: 'Noto Serif', serif;        */
+:root {
+  --primary-color: #039BE5;
+  --hover-color: #29B6F6;
+  --title: "Noto Serif", serif;
+  --body: "Noto Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-family: 400;
+}
+
+a {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navigation {
+  width: 100%;
+}
+.navigation .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navigation .container nav {
+  width: 90%;
+  height: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navigation .container nav a.logo {
+  font-size: 3rem;
+  font-family: "Noto Serif", sans-serif;
+  color: #111;
+  font-weight: 400;
+  cursor: pointer;
+  z-index: 1;
+}
+.navigation .container nav .responsive-links {
+  display: none;
+  height: 300px;
+  width: 400px;
+  background-color: red;
+}
+.navigation .container nav .menu-icon {
+  font-weight: bold;
+  z-index: 2;
+  cursor: pointer;
+}
+.navigation .container nav ul {
+  display: block;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: #fff; */
+  width: 100%;
+  transform: translateX(500%);
+}
+.navigation .container nav ul li {
+  display: block;
+}
+.navigation .container nav ul li a {
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  text-align: right;
+}
+.navigation .container nav ul li a:hover {
+  color: var(--hover-color);
+}
+.navigation .container nav ul.toggle-menu {
+  display: block;
+  background-color: #fff;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container {
+  width: 80%;
+  max-width: 392px;
+  margin: 0 auto;
+}
+.hero .container h1 {
+  font-size: 3rem;
+}
+.hero .container a {
+  transition: margin 0.4s;
+}
+.hero .container a:hover {
+  margin-left: 5px;
+  color: var(--hover-color);
+}
+
+section.main {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+section.main p {
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 660px) {
+  .navigation .container nav .menu-icon {
+    display: none;
+  }  
+  .navigation .container nav ul {
+      /* display: block; */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none;
+      width: 100%;
+      transform: none;
+  }
+  .navigation .container nav ul li.l-1{
+    display: none;
+  }
+  .navigation .container nav ul li.l-5{
+    display: none;
+  }
+   
+}
+
+@media only screen and (min-width: 1080px){
+  .navigation .container nav ul li.l-1{
+    display: none;
+  }
+  .navigation .container nav ul li.l-5{
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1444px){
+  .navigation .container nav ul li.l-1{
+    display: inline-block;
+  }
+}/*# sourceMappingURL=style.css.map */
